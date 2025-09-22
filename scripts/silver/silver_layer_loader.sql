@@ -242,7 +242,7 @@ BEGIN
     EXCEPTION WHEN OTHERS THEN
         RAISE WARNING 'Error loading erp_px_cat_g1v2: %', SQLERRM;
     END;
-
+	total_duration := EXTRACT(SECOND FROM (total_end_time - total_start_time));
     RAISE NOTICE '================================================';
     RAISE NOTICE 'Silver Layer Load Completed Successfully!';
     RAISE NOTICE '================================================';
