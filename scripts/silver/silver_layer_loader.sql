@@ -30,6 +30,9 @@ DECLARE
     start_time TIMESTAMP;
     end_time TIMESTAMP;
     duration NUMERIC;
+	total_start_time TIMESTAMP;
+	total_end_time TIMESTAMP;
+	total_duration NUMERIC;
 BEGIN
     RAISE NOTICE '================================================';
     RAISE NOTICE 'Starting Silver Layer Load...';
