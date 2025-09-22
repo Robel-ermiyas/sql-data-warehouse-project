@@ -17,9 +17,6 @@ Parameters:
 
 Usage:
     CALL silver.load_silver();
-
-Author:
-    Robel Ermiyas
 ===============================================================================
 */
 
@@ -42,6 +39,7 @@ BEGIN
 
     -- crm_cust_info
     BEGIN
+		total_start_time := now()
         start_time := now();
         RAISE NOTICE '>> Truncating silver.crm_cust_info';
         TRUNCATE TABLE silver.crm_cust_info;
@@ -242,7 +240,10 @@ BEGIN
     EXCEPTION WHEN OTHERS THEN
         RAISE WARNING 'Error loading erp_px_cat_g1v2: %', SQLERRM;
     END;
+	total_end_time := NOW();
 	total_duration := EXTRACT(SECOND FROM (total_end_time - total_start_time));
+	
+	RAISE NOTICE '>> Total Duration: % seconds', total_duration; 
     RAISE NOTICE '================================================';
     RAISE NOTICE 'Silver Layer Load Completed Successfully!';
     RAISE NOTICE '================================================';
