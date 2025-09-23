@@ -1,4 +1,4 @@
-# 🧠 Data Warehouse and Analytics Project (PostgreSQL Edition)
+# 🧠 Data Warehouse and Analytics Project
 
 Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
 This project demonstrates a full-stack modern data warehouse solution using **PostgreSQL**, built on the Medallion architecture (Bronze, Silver, Gold layers). Designed for portfolio and real-world readiness, it features best practices in **Data Engineering**, **ETL**, **Data Modeling**, and **Analytics**.
