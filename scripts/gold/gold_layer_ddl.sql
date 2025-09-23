@@ -1,22 +1,29 @@
 /*
+/*
 ===============================================================================
 DDL Script: Create Gold Views (Star Schema)
 ===============================================================================
 Script Purpose:
-    This script creates views for the Gold layer in a PostgreSQL-based data warehouse.
-    The Gold layer is the final semantic layer used for analytics and reporting, 
-    structured as a Star Schema consisting of dimension and fact views.
+    This script defines the Gold Layer of the data warehouse by creating 
+    views based on cleaned and transformed data from the Silver Layer.
 
-    Each view performs joins and transformations on cleaned Silver tables to generate:
-    - Dimension Views (dim_customers, dim_products)
-    - Fact View (fact_sales)
+    The Gold Layer represents the business-ready Star Schema used for reporting 
+    and analytics. It consists of:
+        - Dimension Views: gold.dim_customers, gold.dim_products
+        - Fact View:       gold.fact_sales
 
-Assumptions:
-    - The underlying Silver layer tables already exist and are populated.
-    - Views are re-creatable: existing views will be dropped if they exist.
+    These views apply business rules, enrichments, and derive surrogate keys 
+    for each entity (e.g., customer_key, product_key).
+
+    The views can be consumed directly by BI tools for visualization and dashboarding.
+
+Structure:
+    - Drops views if they exist
+    - Recreates them with proper transformation logic
 
 Usage:
-    - These views are used by BI tools or analysts for querying clean business-ready data.
+    Run this script after loading Silver Layer data to generate the Gold Layer views.
+
 ===============================================================================
 */
 
