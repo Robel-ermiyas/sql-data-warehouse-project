@@ -112,4 +112,10 @@ sql-data-warehouse-project/
 ├── LICENSE                             # License information for the repository
 ├── .gitignore                          # Files and directories to be ignored by Git
 ```
+## ☕ Stay Connected
+
+Let’s connect! 
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](linkedin.com/in/robel-ermiyas)
+
 ---
