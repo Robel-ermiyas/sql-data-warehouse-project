@@ -39,11 +39,11 @@ This project includes:
 Everything used here is free and open-source:
 
 - 📂 **[Datasets](datasets/)** – CRM & ERP CSV files used in Bronze layer
-- 🐘 **PostgreSQL** – Relational DBMS used across all layers
+- 🐘 **[PostgreSQL](https://www.postgresql.org/download/):** Relational DBMS used across all layers
 - 🧠 **pgAdmin / DBeaver** – GUI tools to interact with PostgreSQL
-- 📝 **DrawIO** – Data architecture and flow diagrams
-- 🧱 **SQL** – Entire ETL, DDL, and transformations written in PostgreSQL SQL
-- 🧾 **Notion Template** – [Project Steps](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269?pvs=4)
+- 🧠 **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
+- 📝 **[DrawIO](https://www.drawio.com/):** – Data architecture and flow diagrams
+
 
 ---
 
