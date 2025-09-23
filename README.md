@@ -9,7 +9,7 @@ This project demonstrates a full-stack modern data warehouse solution using **Po
 
 This project is structured using the **Medallion Architecture**:
 
-![Data Architecture](docs/data_architecture.png)
+![Data Architecture](docs/Data_Architecture.png)
 
 1. **Bronze Layer**: Ingests and stores raw data directly from CSV files into PostgreSQL using `COPY` statements.
 2. **Silver Layer**: Performs transformations—such as cleansing, standardizing, and joining—to produce cleaned relational tables.
